@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../estilos/styletres.css">
+    <link rel="stylesheet" href="../estilos/sweetalert2.css">
+    <title>Carrusel</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Servicios</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="../media/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">Uñas</a></li>
+                    <li> <a href="#">Pestañas</a></li>
+                    <li> <a href="https://wa.me/5493513292605">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Elegi tu servicio favorito</h1>
+                <p>En esta galería tenes cada uno de los servicios con sus respectivos precios , (por esmalte liso) .  En el caso de querer:  francesitas , nails art, degradé de colores, u otro tipo de decoración, tendrá un costo extra .</p>
+                <button class="btn-1" onclick="reservarTurno()">Reservar Turno</button>
+            </div>
+        </div>
+        <div class="images">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../media/1.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../media/2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../media/3.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../media/4.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../media/5.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="swiper-button-next"></div> <!--flechas de la libreria-->
+            <div class="swiper-button-prev"></div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js"> </script>
+
+</body>
+</html>

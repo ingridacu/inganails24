@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es"><!--cambie el idioma que me habia olvidado en el sprint uno-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><!-- agregue link de boostrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"><!--agregue link de animaciones-->
+    <link rel="stylesheet" href="./estilos/style.css"><!--agregue una carpeta tb para estilos , modifique esta ruta--->
+    <link rel="stylesheet" href="./pages/reset.css"><!--en la entrega anterior no tenia sub carpetas asi que agregue esta ruta -->
+    <title> Inga Nails</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top"><!--codigo copiado de boostrap-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">inga nails</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Información</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="nosotros">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#titulo-inicio">Inicio</a><!--agregue me lleve a la seccion inicio-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a><!--agregue me lleve a la seccion servicios-->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Precios
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Uñas</a></li>
+                    <li><a class="dropdown-item" href="#">Pestañas y Cejas</li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="https://maps.app.goo.gl/1TArW74RHWrW4pxi8">Ubicacion</a></li><!--agregue me lleve a ubicacion google maps con un click-->
+                    </ul>
+                </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+            </div>
+        </nav>
+    <header class="content header">
+        <h1 class="animate__animated animate__bounce" id="titulo-inicio">Inicio</h1><!--traje clase de animacion-->
+        <p>
+            Bienvenidas a Inga Nails, estudio privado , exclusivo para mujeres ... ¡ Que venir al salón sea una experiencia única, relajante , y de buena energía !
+        </p> <br>
+        <div class="btn-home">
+            <a href="https://www.instagram.com/inga_nails_24/?hl=es" class="btn">Instagram</a><!--este boton abre instagram del negocio-->
+            <a href="https://wa.me/5493513292605" class="btn">Whatsapp</a> <!--este boton lleva a wsp-->
+        </div>
+    </header>
+    <main class="content sau" id="servicios"> <!--y aca puse main y article como la sugerencia en vez de tantos divs -->
+        <h2 class="title">Servicios</h2>
+        <p>Contamos con servicios de: Manicuria, Pedicuria, Cejas y pestañas</p>
+        <div class="box-container"><!--secion de tarjetas con imagenes y texto de cada servicio-->
+            <article class="box">
+                <img src="./media/esmalte.png"><!--ahora pude agregar las imagenes con ./ la vez pasada no podia porque no tenian una carpeta ahora si la tienen-->
+                <h3>Uñas</h3>
+                <p>Soft gel , Kapping , Esmaltado Semipermanente </p>
+            </article>
+            <article class="box">
+                <img src="./media/pestana.png">
+                <h3>Pestañas</h3>
+                <p>Extensiones pelo x pelo ,  y Lifting </p>
+            </article>
+            <article class="box">
+                <img src="./media/ceja.png">
+                <h3>Cejas</h3>
+                <p>Perfilado de cejas y Laminado </p>
+            </article>
+        </div>
+    </main>
+    <section class="content about">
+        <h2 class="title">Nosotros</h2>
+        <p>Déjame contarte un poco acerca de Inga Nails; todo empezó en 2018 como hobbie , dado que en ese momento yo trabajaba en otra cosa relacionada a la tecnología ( un mundo paralelo ), luego poco a poco le empecé a dedicar mi completo amor a lo que me apasionaba tanto hacer .Para así abrir mi estudio y dedicarme solamente a esto, hubo pandemia , hubo mudanzas ,pasaron muchas cosas pero aca sigo , dando absolutamente todo para que ustedes se vayan mas lindas de lo que ya son. Actualmente me encuentro en un estudio privado, en el corazón de Córdoba Capital ,( ayacucho 367 - piso 5 , oficina B, esquina Bv san Juan). si aún no te atendiste conmigo te invito conozcas mis trabajos en mi instagram : @inga_nails_24 . Muchas gracias por tu tiempo , espero verte en mi estudio.</p>
+        <a href="./pages/indexdos.html" class="btn">Deja tu consulta</a><!--agregue link para que al hacer click te lleve a otro html de formulario-->
+    </section>
+    <section class="content price" id="precios">
+        <article class="contain">
+            <h2 class="title">Precios</h2>
+            <p>Contamos con los mejores precios en zona céntrica , (consultar lista de cada servicio)</p>
+            <a href="./pages/indextres.html" class="btn">Consultar Precios</a><!--este boton luego llevara a otro link con la lista de precios-->
+        </article>
+    </section>
+    <section class="content contact" id="ubicacion">
+        <h2 class="title">Ubicación</h2>
+        <p>Ayacucho 367 , piso 5 , oficina B </p> <br>
+        <figure class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.824179629293!2d-64.19375662518058!3d-31.418969896374797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a36ff3329129%3A0xe046edf115deb6fe!2sInga%20Nails!5e0!3m2!1ses-419!2sar!4v1700155710760!5m2!1ses-419!2sar" height="220px" width="100%" alt="mapa"></iframe>  <!--aca tenia una imagen de la ubicacion , pero como se pedia un iframe agregue google maps-->
+        </figure>
+    </section>
+    <footer class="footer">
+        <nav class="container">
+        <article class="footer-row">
+            <div class="footer-links"> 
+                <h4>Inga Nails</h4> 
+                <ul><!--agregue enlaces para que lleven a dichos sectores del sitio web, con sus respectivos id que le di en la entrega pasada  -->
+                <li><a href="#titulo-inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#ubicacion">Ubicacion</a></li>
+                </ul>
+            </div>
+        </article>
+        </nav>
+        <figure class="text-center"><!--codigo sacado de boostrap y adaptado-->
+            <blockquote class="bloquete">
+                <p>Copyright &copy; 2023, Designe, Developer Frontend Ingrid Acuña Toledo 3513292605</p>
+                <figcaption class="bloquete-footer">
+                    <cite title="gracias por tu tiempo"></cite>
+                </figcaption>
+            </blockquote>
+        </figure>
+        <article class="designer"></article>
+        <div class="Social-link">
+            <a href="https://www.linkedin.com/in/ingrid-gisella-acu%C3%B1a-toledo-720433146"><i class="fab fa-linkedin"></i></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script><!--link de boostrap -->
+    
+</body>
+</html>
